@@ -45,6 +45,18 @@ npm run lint
 
 ### 项目说明
 ```
+// @ is an alias to /src
+组件引入
+import XXXX from '@/components/XXXXX/XXXX.vue
+
+路由原生tab效果
+&.router-link-exact-active { 
+  color: #42b983;
+}
+
+```
+### 项目说明
+```
 项目使用vue cli 快速开发进行开发，开发时采用@vue/cli 4.2.3， UI框架采用element-ui，
 使用mock进行数据模拟接口。
 2020-03-23  添加项目依赖
