@@ -20,6 +20,29 @@ npm run build
 npm run lint
 ```
 
+### 项目目录
+```
+/vueoabse
+ | - /oabase
+    | - /public 公共文件
+    | - /src 项目文件
+        | - /assets  页面静态资源文件
+        | - /components 组件文件夹
+        | - /router 路由文件
+        | - /store vue-strore存储文件
+        | - /views 页面文件夹
+        | - App.vue 主页面
+        | - main.js
+    | - .editorconfig
+    | - .gitignore
+    | - README.md
+    | - babel.config.js
+    | - package-lock.json
+    | - package.json
+ | - .gitignore
+
+```
+
 ### 项目说明
 ```
 项目使用vue cli 快速开发进行开发，开发时采用@vue/cli 4.2.3， UI框架采用element-ui，
