@@ -54,6 +54,16 @@ import XXXX from '@/components/XXXXX/XXXX.vue
   color: #42b983;
 }
 
+路由引入方式
+{
+    path: '/xxx',
+    name: 'Xxx',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/xxx.vue')
+}
+
 ```
 ### 项目说明
 ```
