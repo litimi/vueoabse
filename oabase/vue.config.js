@@ -4,6 +4,28 @@ const pxtorem = require('postcss-pxtorem');
 module.exports = {
   devServer: {
     port: 8081,     // 端口
+    proxy: {  // 代理配置
+      '/api': {
+        target: 'http://localhost:3000/api',
+        ws: true,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      },
+      // '/foo': {
+      //   target: '<other_url>'
+      // }
+    }
+    // proxyTable: {
+    //   '/api': {
+    //     target: 'http://localhost:3000/api',
+    //     changeOrigin: true,
+    //     pathRewrite: {
+    //       '^/api': ''
+    //     }
+    //   }
+    // }
   },
   publicPath: './',
   productionSourceMap: true,
@@ -19,11 +41,11 @@ module.exports = {
       },
       postcss: {
         plugins: [
-          autoprefixer(),
-          pxtorem({
-            rootValue: 50, // 根节点的
-            propList: ['*']
-          })
+          // autoprefixer(),
+          // pxtorem({
+          //   rootValue: 10, // 根节点的
+          //   propList: ['*']
+          // })
         ]
       }
     }
