@@ -75,6 +75,28 @@ xlsx导出excel
 axios接口调用
 moment时间格式整理
 element-ui饿了么ui
+
+
+node接口测试
+//获取数据
+getArticle() {
+  this.$http.get('/api/getValue', {
+    params: {id: 1}
+  }).then( (res) => {
+    console.log('res', res);
+    this.inpContent = res.data[0].name;
+  })
+},
+
+// 添加数据
+insertValue(){
+  this.$http.post('/api/insertValue', {
+    name: '测试'
+  }).then( (res) => {
+    console.log('res', res);
+    // this.inpContent = res.data[0].name;
+  })
+}
 ```
 
 ### Customize configuration
