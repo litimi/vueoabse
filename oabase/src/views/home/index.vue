@@ -1,7 +1,20 @@
 <!--首页-->
 <template>
-  <div class="oabase_back">
-
+  <div class="oabase_back home">
+    <main>
+      <blockquote>
+        "This only way to get rid of a temptatioon is to yield to it.
+        Ressist it, and you soul grows sick with longing for the
+        things it has forbidden to itself, with desire for what its
+        monstrous laws have made monstrous and unlawful"
+        <footer>
+          <cite>
+            Oscar Wilde,
+            The Picture of Dorian Gray
+          </cite>
+        </footer>
+      </blockquote>
+    </main>
   </div>
 </template>
 
@@ -13,33 +26,40 @@ export default {
   },
   data(){
     return {
-      inpContent: ''
     }
   },
   methods: {
-    //获取数据
-    getArticle() {
-      this.$http.get('/api/getValue', {
-        params: {id: 1}
-      }).then( (res) => {
-        console.log('res', res);
-        this.inpContent = res.data[0].name;
-      })
-    },
 
-    // 添加数据
-    insertValue(){
-      this.$http.post('/api/insertValue', {
-        name: '测试'
-      }).then( (res) => {
-        console.log('res', res);
-        // this.inpContent = res.data[0].name;
-      })
-    }
   },
 }
 </script>
 
 <style scoped lang="scss">
-
-</style>>
+  .home{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    main{
+      width: 60%;
+      height: 40%;
+      background: hsla(0, 0%,100%,.3);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+    main::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      /*background: rgba(255,0,0,.5);*/
+      border-radius: 10px;
+      filter: blur(20px);
+      margin: -30px;
+    }
+  }
+</style>

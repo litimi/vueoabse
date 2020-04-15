@@ -1,4 +1,4 @@
-<!--首页-->
+<!--登录页-->
 <template>
   <div class="oabase_back">
     <!--登录-->
@@ -100,9 +100,9 @@
               ).then( (res) => {
                 console.log('res', res);
                 if (res.data.status == 200){
-                  localStorage.setItem('token', res.data.data.token)
-                  localStorage.setItem('userId', res.data.data.id)
-                  this.$router.push({path: '/Home', query: {id: res.data.data.id}})
+                  sessionStorage.setItem('token', res.data.data.token)
+                  sessionStorage.setItem('userId', res.data.data.id)
+                  this.$router.push({path: '/', query: {id: res.data.data.id}})
                 } else {
                   alert('该用户不存在！')
                 }
