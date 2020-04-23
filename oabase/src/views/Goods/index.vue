@@ -1,20 +1,27 @@
-<!-- 部门管理 -->
+<!--物品管理-->
 <template>
-  <div>
-    <router-view></router-view>
+  <div class="blog_main">
+    物品管理
   </div>
 </template>
 
 <script>
+
   export default {
-    data () {
+    name: 'Goods',
+    components: {
+    },
+    data(){
       return {
 
       }
-    }
+    },
+    methods: {
+
+    },
   }
 </script>
 
 <style scoped lang="scss">
 
-</style>
+</style>>

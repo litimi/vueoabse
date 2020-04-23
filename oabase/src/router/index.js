@@ -5,13 +5,19 @@ import Home from '../views/Home/index.vue'
 import Department from '../views/Department'
 import ItemManagement from '../views/Department/ItemManagement/index.vue'
 import Member from '../views/Department/Member/index.vue'
+import Accounting from '../views/Accounting/index.vue'
+import Goods from '../views/Goods/index.vue'
+import Project from '../views/Project/index.vue'
+import systemSet from '../views/systemSet'
+import Jurisdiction from '../views/systemSet/Jurisdiction/index.vue'
+import User from '../views/systemSet/User/index.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: '主页',
     component: Home,
     meta:{
       isLogin: true
@@ -19,7 +25,7 @@ const routes = [
   },
   {
     path: '/Login',
-    name: 'Login',
+    name: '登陆',
     component: Login,
     meta:{
       isLogin:false
@@ -27,12 +33,13 @@ const routes = [
   },
   {
     path: '/Department',
+    name: '部门管理',
     component: Department,
     redirect: '/Department/ItemManagement',
     children: [
       {
         path: 'ItemManagement',
-        name: 'ItemManagement',
+        name: '部门管理',
         component: ItemManagement,
         meta:{
           isLogin: true
@@ -40,8 +47,56 @@ const routes = [
       },
       {
         path: 'Member',
-        name: 'Member',
+        name: '成员管理',
         component: Member,
+        meta:{
+          isLogin: true
+        }
+      },
+    ]
+  },
+  {
+    path: '/Accounting',
+    name: '财务管理',
+    component: Accounting,
+    meta:{
+      isLogin: true
+    }
+  },
+  {
+    path: '/Goods',
+    name: '物品管理',
+    component: Goods,
+    meta:{
+      isLogin: true
+    }
+  },
+  {
+    path: '/Project',
+    name: '项目管理',
+    component: Project,
+    meta:{
+      isLogin: true
+    }
+  },
+  {
+    path: '/systemSet',
+    name: '系统管理',
+    component: systemSet,
+    redirect: '/systemSet/User',
+    children: [
+      {
+        path: 'User',
+        name: '用户管理',
+        component: User,
+        meta:{
+          isLogin: true
+        }
+      },
+      {
+        path: 'Jurisdiction',
+        name: '权限管理',
+        component: Jurisdiction,
         meta:{
           isLogin: true
         }
