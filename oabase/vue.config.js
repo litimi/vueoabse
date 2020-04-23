@@ -3,6 +3,12 @@ const autoprefixer = require('autoprefixer');
 const pxtorem = require('postcss-pxtorem');
 module.exports = {
   devServer: {
+    host: '0.0.0.0',
+    public:'172.168.179.196:8081',
+    // port: 8080,
+    https: false,
+    hotOnly: false,
+    disableHostCheck:true,
     port: 8081,     // 端口
     proxy: {  // 代理配置
       '/api': {
