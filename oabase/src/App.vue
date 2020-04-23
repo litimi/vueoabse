@@ -32,6 +32,7 @@
         tag="section"
         :style="{width: '100%',height: '100%', overflowX: 'hidden'}">
           <el-card class="box-card" :style="{height: '100%', background: $route.meta.isLogin?'rgba(255,255,255,0.5)':'none'}">
+            <Bread></Bread>
             <router-view/>
           </el-card>
         </el-scrollbar>
@@ -44,10 +45,11 @@
   import Head from '@/components/Head';
   import Footer from '@/components/Footer';
   import LeftMenu from '@/components/LeftMenu';
+  import Bread from '@/components/Bread'
   export default {
     name: 'APP',
     components:{
-      Head, Footer, LeftMenu
+      Head, Footer, LeftMenu, Bread
     },
     data(){
       return{
