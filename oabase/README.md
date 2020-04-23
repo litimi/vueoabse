@@ -3,11 +3,17 @@
 ## 安装项目依赖
 ```
 npm install 或者 cnpm install
+
 ```
 
-### 项目启动
+### 前端项目启动
 ```
 npm run serve
+```
+
+### node项目启动(项目根目录下server文件夹下运行)
+```
+node index.js
 ```
 
 ### 打包
@@ -25,6 +31,7 @@ npm run lint
 /vueoabse
  | - /oabase
     | - /public 公共文件
+    | - /server node服务配置及接口
     | - /src 项目文件
         | - /assets  页面静态资源文件
         | - /components 组件文件夹
@@ -76,27 +83,15 @@ axios接口调用
 moment时间格式整理
 element-ui饿了么ui
 
+```
 
-node接口测试
-//获取数据
-getArticle() {
-  this.$http.get('/api/getValue', {
-    params: {id: 1}
-  }).then( (res) => {
-    console.log('res', res);
-    this.inpContent = res.data[0].name;
-  })
-},
-
-// 添加数据
-insertValue(){
-  this.$http.post('/api/insertValue', {
-    name: '测试'
-  }).then( (res) => {
-    console.log('res', res);
-    // this.inpContent = res.data[0].name;
-  })
-}
+### node+express
+```
+index.js
+db.js
+sqlMap.js
+api.js 
+router.js
 ```
 
 ### Customize configuration
