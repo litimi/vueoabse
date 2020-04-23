@@ -14,6 +14,19 @@ h1,h2,h3,h4,h5,h6{
     font-size: 12px;
     color: #000;
 }
+
+/*el样式修改*/
+
+.el-header{
+    padding: 0;
+}
+.el-scrollbar__wrap{
+    overflow-x: hidden;
+}
+
+/*el样式修改*/
+
+
 #app{
     /*width: 100%;*/
     /*height: 100%;*/
@@ -41,12 +54,20 @@ h1,h2,h3,h4,h5,h6{
 .el-scrollbar__view{
     height: 100%;
 }
+.el-header{
+    width: 100%;
+    float: left;
+}
+.el-container{
+    height: 100%;
+    float: left;
+}
 
 
 
 /*头部样式*/
 .blog_head{
-    height: 10%;
+    height: 100%;
     width: 100%;
     background: rgba(0,0,0, 0.4);
 }

@@ -1,16 +1,14 @@
-<!--底部-->
+<!--成员管理-->
 <template>
-  <div class="blog_footer">
-    <div>
-
-    </div>
+  <div class="blog_main">
+    成员管理
   </div>
 </template>
 
 <script>
 
   export default {
-    name: 'Footer',
+    name: 'Member',
     components: {
     },
     data(){
@@ -26,4 +24,4 @@
 
 <style scoped lang="scss">
 
-</style>>
+</style>

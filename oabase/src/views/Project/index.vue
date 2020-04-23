@@ -1,16 +1,14 @@
-<!--底部-->
+<!--项目管理-->
 <template>
-  <div class="blog_footer">
-    <div>
-
-    </div>
+  <div class="blog_main">
+    项目管理
   </div>
 </template>
 
 <script>
 
   export default {
-    name: 'Footer',
+    name: 'Project',
     components: {
     },
     data(){

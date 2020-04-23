@@ -1,16 +1,14 @@
-<!--底部-->
+<!--用户管理-->
 <template>
-  <div class="blog_footer">
-    <div>
-
-    </div>
+  <div class="blog_main">
+    用户管理
   </div>
 </template>
 
 <script>
 
   export default {
-    name: 'Footer',
+    name: 'User',
     components: {
     },
     data(){

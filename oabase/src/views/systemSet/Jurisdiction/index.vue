@@ -1,16 +1,14 @@
-<!--底部-->
+<!--权限管理-->
 <template>
-  <div class="blog_footer">
-    <div>
-
-    </div>
+  <div class="blog_main">
+    权限管理
   </div>
 </template>
 
 <script>
 
   export default {
-    name: 'Footer',
+    name: 'Jurisdiction',
     components: {
     },
     data(){
