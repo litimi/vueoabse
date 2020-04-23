@@ -23,28 +23,6 @@ h1,h2,h3,h4,h5,h6{
 .el-scrollbar__wrap{
     overflow-x: hidden;
 }
-
-/*el样式修改*/
-
-
-#app{
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*background: #fff;*/
-    /*display: flex;*/
-
-}
-/*统一外层*/
-.oabase_back{
-    width: 100%;
-    height: 90%;
-    background: #fff;
-    display: flex;
-    background: none;
-    position: relative;
-}
-
-/*el样式*/
 .el-scrollbar{
     height: 100%;
 }
@@ -62,15 +40,48 @@ h1,h2,h3,h4,h5,h6{
     height: 100%;
     float: left;
 }
+/*el样式修改*/
+
+
+#app{
+
+}
+
+/*统一外层*/
+.oabase_back{
+    width: 100%;
+    height: 90%;
+    background: #fff;
+    display: flex;
+    background: none;
+    position: relative;
+}
 
 
 
 /*头部样式*/
 .blog_head{
     height: 100%;
-    width: 100%;
+    width: 94%;
     background: rgba(0,0,0, 0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
 }
+.blog_logo{
+    width: 200px;
+    height: 80%;
+    background: #3a8ee6;
+}
+.blog_userinfo{
+    width: 300px;
+    height: 80%;
+    background: #3a8ee6;
+}
+
+
 /*底部样式*/
 .blog_footer{
     height: 10%;

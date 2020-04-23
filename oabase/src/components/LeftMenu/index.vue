@@ -18,7 +18,7 @@
           <span>部门管理</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="/Department/ItemManagement">部门</el-menu-item>
+          <el-menu-item index="/Department/ItemManagement">部门管理</el-menu-item>
           <el-menu-item index="/Department/Member">部门成员</el-menu-item>
         </el-menu-item-group>
       </el-submenu>

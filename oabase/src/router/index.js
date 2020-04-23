@@ -20,7 +20,8 @@ const routes = [
     name: '主页',
     component: Home,
     meta:{
-      isLogin: true
+      isLogin: true,
+      title: '首页'
     }
   },
   {
@@ -42,7 +43,8 @@ const routes = [
         name: '部门管理',
         component: ItemManagement,
         meta:{
-          isLogin: true
+          isLogin: true,
+          title: '部门管理'
         }
       },
       {
@@ -50,17 +52,23 @@ const routes = [
         name: '成员管理',
         component: Member,
         meta:{
-          isLogin: true
+          isLogin: true,
+          title: '成员管理'
         }
       },
-    ]
+    ],
+    meta:{
+      isLogin: true,
+      title: '部门管理'
+    }
   },
   {
     path: '/Accounting',
     name: '财务管理',
     component: Accounting,
     meta:{
-      isLogin: true
+      isLogin: true,
+      title: '财务管理'
     }
   },
   {
@@ -68,7 +76,8 @@ const routes = [
     name: '物品管理',
     component: Goods,
     meta:{
-      isLogin: true
+      isLogin: true,
+      title: '物品管理'
     }
   },
   {
@@ -76,7 +85,8 @@ const routes = [
     name: '项目管理',
     component: Project,
     meta:{
-      isLogin: true
+      isLogin: true,
+      title: '项目管理'
     }
   },
   {
@@ -90,7 +100,8 @@ const routes = [
         name: '用户管理',
         component: User,
         meta:{
-          isLogin: true
+          isLogin: true,
+          title: '用户管理'
         }
       },
       {
@@ -98,10 +109,15 @@ const routes = [
         name: '权限管理',
         component: Jurisdiction,
         meta:{
-          isLogin: true
+          isLogin: true,
+          title: '权限管理'
         }
       },
-    ]
+    ],
+    meta:{
+      isLogin: true,
+      title: '系统管理'
+    }
   },
 ]
 
